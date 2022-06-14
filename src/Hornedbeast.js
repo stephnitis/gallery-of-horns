@@ -1,6 +1,20 @@
 import React from 'react';
+import './Hornedbeast.css';
 
 class Hornedbeast extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      likes: 0
+    };
+  }
+
+  handleLikes = () => {
+    this.setState({
+      likes: this.state.likes + 1
+    })
+  }
 
   render() {
     return (
@@ -12,7 +26,9 @@ class Hornedbeast extends React.Component {
             alt={this.props.keyword}
             title={this.props.title}
           />
-          <p>{this.props.description}</p>
+          <p>{this.props.description}</p><br/>
+          <p>{this.state.likes} 💙</p>
+          <p onClick={this.handleLikes}>Like</p>
         </article>
 
       </>

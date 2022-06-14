@@ -1,4 +1,16 @@
 body {
-  background-color: rgb(16, 34, 29);
+  background-color: white;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  background-color: #4267B3;
   color: whitesmoke;
+  font-size: 5vw;
+}
+
+h2{
+  color:#4267B3;
+  background-color: #E9EBEE;
 }
