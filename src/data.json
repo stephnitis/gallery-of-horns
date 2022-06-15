@@ -34,8 +34,8 @@
   {
     "_id": 5,
     "image_url": "https://i.pinimg.com/736x/b4/61/06/b46106830b841017ea59870b27ec18dc--narwhals-a-unicorn.jpg",
-    "title": "Basically a unicorn",
-    "description": "A narwhal is basically a unicorn after all, right?",
+    "title": "Basically a unicorn?",
+    "description": "Keep dreaming.",
     "keyword": "narwhal",
     "horns": 1
   },
@@ -74,9 +74,9 @@
   {
     "_id": 10,
     "image_url": "https://www.shopmascot.com/image/cache/mascotnew/new196-800x800.jpg",
-    "title": "Rhino costume",
-    "description": "Mascots have to get their costumes somewhere",
-    "keyword": "rhino",
+    "title": "Rhino Fursuit",
+    "description": "Ready for the furry convention",
+    "keyword": "rhino fursona",
     "horns": 2
   },
   {
