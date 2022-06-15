@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# TIME SPENT PER FEATURE:
+
+Feature #1: Display Images
+Estimate of time needed to complete: 30 minutes 
+Start time: 140PM
+Finish time: 240PM
+(took me a bit longer because I forgot I need to use the `map` function initially)
+
+Feature #2: User Votes
+Estimate of time needed to complete: 30 minutes
+Start time: 240PM
+Finish time: 310PM
+
+
+Feature #3: Bootstrap
+Estimate of time needed to complete: One hour per feature
+Start time: 4PM
+Finish time: 6PM
+Spent more time due to learning curve resolving bugs with my initial styling and then messing with various options, but once I knew that I wanted to use the card feature it didn't take too long.
