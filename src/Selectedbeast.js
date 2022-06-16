@@ -15,10 +15,11 @@ class Selectedbeast extends React.Component {
         <Modal.Header closeButton>
           <Modal.Title>{this.props.selectBeast.description}</Modal.Title>
         </Modal.Header>
-        <Modal.Body >
+        <Modal.Body>
           <img 
             src={this.props.selectBeast.image_url}
             alt={this.props.selectBeast.alt}
+            width = "300px"
           ></img>        
         </Modal.Body>
       </Modal>
