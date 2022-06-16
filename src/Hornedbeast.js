@@ -1,9 +1,9 @@
 import React from 'react';
 import './Hornedbeast.css';
-import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
+
 
 class Hornedbeast extends React.Component {
 
@@ -20,26 +20,37 @@ class Hornedbeast extends React.Component {
     })
   }
 
+  handleModalClick = () => {
+    console.log('They Clicked')
+    this.props.handleShowModal(this.props.description, this.props.image_url, this.props.alt);
+  }
+
   render() {
     return (
       <>
-        <article>
-          <Row xs={1} md={3} className="g-4">
-            {Array.from({ length: 1 }).map((_, idx) => (
-              <Col>
-                <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src={this.props.image_url} />
-                  <Card.Body>
-                    <Card.Title>{this.props.title}</Card.Title>
-                    <Card.Text>{this.props.description}</Card.Text>
-                    <Card.Text>{this.state.likes} 💙</Card.Text>
-                    <Button variant="primary" onClick={this.handleLikes}>Like</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </article>
+        <Col className='mb-5 mt-5'>
+          <Card
+            className='h-100 p-3'>
+            <Card.Header
+              className='text-center'
+            >
+              {this.props.title}
+            </Card.Header>
+            <Card.Img onClick={this.handleModalClick} variant="top" src={this.props.image_url} />
+
+            <Card.Body className='mt-3 mb-3'>
+              <Card.Text>{this.props.description}</Card.Text>
+            </Card.Body>
+
+            <Card.Footer>
+              <Card.Text className='p-3'>{this.state.likes} 💙&nbsp;&nbsp;&nbsp;
+              <Button variant="primary" onClick={this.handleLikes}>Like</Button>
+              </Card.Text>
+              {/* <Card.Text>{this.state.hearts}</Card.Text> */}
+            </Card.Footer>
+          </Card>
+        </Col>
+
 
 
 
