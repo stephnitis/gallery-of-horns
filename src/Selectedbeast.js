@@ -16,11 +16,10 @@ class Selectedbeast extends React.Component {
           <Modal.Title>{this.props.selectBeast.description}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img 
+          <img className="img-fluid" 
             src={this.props.selectBeast.image_url}
             alt={this.props.selectBeast.alt}
-            width = "300px"
-          ></img>        
+         />        
         </Modal.Body>
       </Modal>
 
