@@ -29,17 +29,18 @@ class Hornedbeast extends React.Component {
     return (
       <>
         <Col className='mb-5 mt-5'>
-          <Card
-            className='h-100 p-3'>
-            <Card.Header
-              className='text-center'
-            >
+
+          <Card className='h-100 p-3'>
+
+            <Card.Header className='text-center'>
               {this.props.title}
             </Card.Header>
+
             <Card.Img onClick={this.handleModalClick} variant="top" src={this.props.image_url} />
 
             <Card.Body className='mt-3 mb-3'>
               <Card.Text>{this.props.description}</Card.Text>
+              {/* <Card.Text>Has {this.props.horns} Horns</Card.Text> */}
             </Card.Body>
 
             <Card.Footer>
@@ -48,6 +49,7 @@ class Hornedbeast extends React.Component {
               </Card.Text>
               {/* <Card.Text>{this.state.hearts}</Card.Text> */}
             </Card.Footer>
+            
           </Card>
         </Col>
 
